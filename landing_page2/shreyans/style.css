@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    color: rebeccapurple;
+    background-color: beige;
+}
+
+#a{
+
+padding: 1cm;
+background-color: blueviolet;
+font-size: 600%;
+font-style: normal;
+color: rgb(207, 27, 27);
+text-align: center;
+padding : 40px;
+
+
+
+}
+ .abc{
+    padding: 1cm;
+background-image: inherit;
+background-position: 10%;
+background-color: beige;
+font-size: 600%;
+font-style: normal;
+color: rgb(207, 27, 27);
+text-align: center;
+
+ }
+
+ #main{
+    width:100%;
+    height: 5%;
+    background-color: chocolate;
+ }
+
+ #lal{
+    width: 10%;
+    height: 10%;
+    }
+
+h4{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    margin: 10px 20px 10px 50px;
+    float: left;
+    padding : 15px
+    
+
+}
+
+#dev{
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    background-image: url();
+}
+
+#palla{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1682685797507-d44d838b0ac7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+
+    background-size: cover;
+    
+    background-position: center;
+}
+
+#car1{
+    
+    width: 100px;
+    height: 120px;
+    background-color: rgb(164, 21, 231);
+
+}
+
+#car2{
+    position: absolute;
+    right:10px;
+    width: 110px;
+    height: 90px;
+    background-color:yellow ;
+    
+}
+#car3{
+    width: 130px;
+    height: 110px;
+    background-color: green;
+}
+
+#box{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:500px;
+    height: 500px;
+    background-color: aqua;
+
+}
+
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
+#box2{
+    width: 100px;
+    height: 110px;
+    background-color: olive;
+}
+
+
+#box3{
+    width: 100px;
+    height: 120px;
+    background-color: green;
+}

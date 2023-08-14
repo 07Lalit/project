@@ -1,0 +1,67 @@
+understanding css -> styling
+making css files
+understanding linking
+css boilerplate
+understanding css writing way
+understanding width , height
+understanding units , px and %
+understanding margins padding
+understanding background image and things related to it
+understanding position absolute
+understanding flexbox 
+
+
+-> points
+
+1) use this boilerplate code in every css files
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+koibhielement target karke karke curly braces ka use karo ex
+
+h1{
+
+}
+
+
+px and percentage kab use karna hai 
+
+           jab bhi aap puri screen ka adha use karte ho kyoki hume nahi 
+           pata screen ka size 
+
+
+
+
+
+px kys hots hsi jab thoda se bdana ho .
+
+              # -> ka matlab id
+               . => ka matlab class
+
+
+
+margin hota hai two element ke beech me space
+padding hota hai ek hi element ke andar space ( imaginary border inside element)
+
+
+
+jo bhi element position absolute hoga bo uppper uth jayega ot
+jab bo upper uthega to uski jagha khali ho jayegi agla elemnt age aa
+jayega
+
+
+position relative a use karenge upper bhi uther or box se bahr bhi na jayega
+jisme rakhna usse position narative kahenge
+
+
+width justify content
+height align items

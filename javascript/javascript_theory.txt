@@ -1,0 +1,3116 @@
+
+             
+                                          JAVASCRIPT History 
+                                          ==================
+JavaScript / ECMAScript
+JavaScript was invented by Brendan Eich in 1995.
+
+It was developed for Netscape 2, and became the ECMA-262 standard in 1997.
+
+After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the Firefox browser. Mozilla's latest version was 1.8.5. (Identical to ES5).
+
+Internet Explorer (IE4) was the first browser to support ECMA-262 Edition 1 (ES1).
+
+Year	ECMA	Browser
+1995	 	JavaScript was invented by Brendan Eich
+1996	 	Netscape 2 was released with JavaScript 1.0
+1997	 	JavaScript became an ECMA standard (ECMA-262)
+1997	ES1	ECMAScript 1 was released
+1997	ES1	IE 4 was the first browser to support ES1
+1998	ES2	ECMAScript 2 was released
+1998	 	Netscape 42 was released with JavaScript 1.3
+1999	ES2	IE 5 was the first browser to support ES2
+1999	ES3	ECMAScript 3 was released
+2000	ES3	IE 5.5 was the first browser to support ES3
+2000	 	Netscape 62 was released with JavaScript 1.5
+2000	 	Firefox 1 was released with JavaScript 1.5
+2008	ES4	ECMAScript 4 was abandoned
+2009	ES5	ECMAScript 5 was released
+2011	ES5	IE 9 was the first browser to support ES5 *
+2011	ES5	Firefox 4 was released with JavaScript 1.8.5
+2012	ES5	Full support for ES5 in Safari 6
+2012	ES5	Full support for ES5 in IE 10
+2012	ES5	Full support for ES5 in Chrome 23
+2013	ES5	Full support for ES5 in Firefox 21
+2013	ES5	Full support for ES5 in Opera 15
+2014	ES5	Full support for ES5 in all browsers
+2015	ES6	ECMAScript 6 was released
+2016	ES6	Full support for ES6 in Chrome 51
+2016	ES6	Full support for ES6 in Opera 38
+2016	ES6	Full support for ES6 in Safari 10
+2017	ES6	Full support for ES6 in Firefox 54
+2017	ES6	Full support for ES6 in Edge 15
+2018	ES6	Full support for ES6 in all browsers **
+Note
+* Internet Explorer 9 did not support ES5 "use strict".
+
+** Internet Explorer 11 does not support ES6.
+
+The ECMA Technical Committee 39
+In 1996, Netscape and Brendan Eich took JavaScript to the ECMA international standards organization, and a technical committee (TC39) was created to develop the language.
+
+ECMA-262 Edition 1 was released in June 1997.
+
+ADVERTISEMENT
+
+From ES4 to ES6
+When the TC39 committee got together in Oslo in 2008, to agree on ECMAScript 4, they were divided into 2 very different camps:
+
+The ECMAScript 3.1 Camp:
+Microsoft and Yahoo who wanted an incremental upgrade from ES3.
+
+The ECMAScript 4 Camp:
+Adobe, Mozilla, Opera, and Google who wanted a massive ES4 upgrade.
+
+August 13 2008, Brendan Eich wrote an email:
+
+It's no secret that the JavaScript standards body, Ecma's Technical Committee 39, has been split for over a year, with some members favoring ES4, a major fourth edition to ECMA-262, and others advocating ES3.1 based on the existing ECMA-262 Edition 3 (ES3) specification. Now, I'm happy to report, the split is over.
+
+The solution was to work together:
+
+ECMAScript 4 was renamed to ES5
+ES5 should be an incremental upgrade of ECMAScript 3.
+Features of ECMAScript 4 should be picked up in later versions.
+TC39 should develop a new major release, bigger in scope than ES5.
+The planned new release (ES6) was codenamed "Harmony" (Because of the split it created?).
+
+ES5 was a huge success. It was released in 2009, and all major browsers (including Internet Explorer) were fully compliant by July 2013:
+             
+             
+             
+
+
+
+
+                                             javascript objects
+                                             --------------------
+
+
+In JavaScript, objects are king. If you understand objects, you understand JavaScript.
+
+In JavaScript, almost "everything" is an object.
+
+Booleans can be objects (if defined with the new keyword)
+Numbers can be objects (if defined with the new keyword)
+Strings can be objects (if defined with the new keyword)
+Dates are always objects
+Maths are always objects
+Regular expressions are always objects
+Arrays are always objects
+Functions are always objects
+Objects are always objects
+All JavaScript values, except primitives, are objects.
+
+JavaScript Primitives
+A primitive value is a value that has no properties or methods.
+
+3.14 is a primitive value
+
+A primitive data type is data that has a primitive value.
+
+JavaScript defines 7 types of primitive data types:
+
+Examples
+string
+number
+boolean
+null
+undefined
+symbol
+bigint
+             
+             
+             
+                                  JavaScript Function
+                                  -------------------
+
+JavaScript functions are defined with the function keyword.
+
+You can use a function declaration or a function expression.
+
+Function Declarations
+Earlier in this tutorial, you learned that functions are declared with the following syntax:
+
+function functionName(parameters) {
+  // code to be executed
+}
+Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are invoked (called upon).
+The function above is actually an anonymous function (a function without a name).
+
+Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
+
+The function above ends with a semicolon because it is a part of an executable statement.
+
+
+
+Functions are Objects
+-------------------------
+
+The typeof operator in JavaScript returns "function" for functions.
+
+But, JavaScript functions can best be described as objects.
+
+JavaScript functions have both properties and methods.
+
+             
+ Arrow Functions
+ -------------------
+Arrow functions allows a short syntax for writing function expressions.
+
+You don't need the function keyword, the return keyword, and the curly brackets.            
+             
+             
+
+
+
+                                      JavaScript Classes
+                                      ------------------
+
+
+ECMAScript 2015, also known as ES6, introduced JavaScript Classes.
+
+JavaScript Classes are templates for JavaScript Objects.   
+A JavaScript class is not an object.
+It is a template for JavaScript objects.        
+             
+JavaScript Class Syntax
+Use the keyword class to create a class.
+
+Always add a method named constructor():
+
+Syntax
+class ClassName {
+  constructor() { ... }
+}            
+             
+             
+The constructor method is called automatically when a new object is created.           
+The Constructor Method
+The constructor method is a special method:
+
+It has to have the exact name "constructor"
+It is executed automatically when a new object is created
+It is used to initialize object properties
+If you do not define a constructor method, JavaScript will add an empty constructor method.            
+
+
+Class Methods
+Class methods are created with the same syntax as object methods.
+
+Use the keyword class to create a class.
+
+Always add a constructor() method.
+
+Then add any number of methods.
+
+Syntax
+class ClassName {
+  constructor() { ... }
+  method_1() { ... }
+  method_2() { ... }
+  method_3() { ... }
+}
+
+
+Example
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+  age() {
+    const date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+
+const myCar = new Car("Ford", 2014);
+document.getElementById("demo").innerHTML =
+"My car is " + myCar.age() + " years old.";         
+
+
+
+
+                                          JavaScript Callbacks
+                                          --------------------
+"I will call back later!"
+
+A callback is a function passed as an argument to another function
+
+This technique allows a function to call another function
+
+A callback function can run after another function has finished
+
+
+
+
+
+
+                                        Asynchronous JavaScript
+"I will finish later!"
+
+Functions running in parallel with other functions are called asynchronous
+
+A good example is JavaScript setTimeout()
+
+Asynchronous JavaScript
+The examples used in the previous chapter, was very simplified.
+
+The purpose of the examples was to demonstrate the syntax of callback functions:
+
+Example
+function myDisplayer(something) {
+  document.getElementById("demo").innerHTML = something;
+}
+
+function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+
+myCalculator(5, 5, myDisplayer);
+
+In the example above, myDisplayer is the name of a function.
+
+It is passed to myCalculator() as an argument.
+
+In the real world, callbacks are most often used with asynchronous functions.
+
+A typical example is JavaScript setTimeout().
+             
+
+
+
+                                    JavaScript Promises
+"I Promise a Result!"
+
+"Producing code" is code that can take some time
+
+"Consuming code" is code that must wait for the result
+
+A Promise is a JavaScript object that links producing code and consuming code
+
+  
+
+
+                                       JavaScript Async
+"async and await make promises easier to write"
+
+async makes a function return a Promise
+
+await makes a function wait for a Promise
+
+
+
+
+
+
+
+
+                                         JavaScript HTML DOM
+With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
+
+The HTML DOM (Document Object Model)
+When a web page is loaded, the browser creates a Document Object Model of the page.
+
+The HTML DOM model is constructed as a tree of Objects:
+
+With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+JavaScript can react to all existing HTML events in the page
+JavaScript can create new HTML events in the page
+
+
+
+                      What is the DOM?
+
+
+The DOM is a W3C (World Wide Web Consortium) standard.
+
+The DOM defines a standard for accessing documents:
+
+"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+
+The W3C DOM standard is separated into 3 different parts:
+
+Core DOM - standard model for all document types
+XML DOM - standard model for XML documents
+HTML DOM - standard model for HTML documents
+
+What is the HTML DOM?
+The HTML DOM is a standard object model and programming interface for HTML. It defines:
+
+The HTML elements as objects
+The properties of all HTML elements
+The methods to access all HTML elements
+The events for all HTML elements
+
+
+In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
+
+
+
+
+
+
+
+
+
+
+                                         JavaScript Cookies
+                                         ----------------
+
+Cookies let you store user information in web pages.
+
+What are Cookies?
+Cookies are data, stored in small text files, on your computer.
+
+When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.
+
+Cookies were invented to solve the problem "how to remember information about the user":
+
+When a user visits a web page, his/her name can be stored in a cookie.
+Next time the user visits the page, the cookie "remembers" his/her name.
+Cookies are saved in name-value pairs like:
+
+username = John Doe
+When a browser requests a web page from a server, cookies belonging to the
+ page are added to the request. This way the server gets the necessary data 
+ to "remember" information about users.
+
+
+JavaScript Popup Boxes
+-------------------------
+JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.
+
+
+JavaScript Timing Events
+---------------------
+
+JavaScript can be executed in time-intervals.
+
+This is called timing events.
+
+Timing Events
+The window object allows execution of code at specified time intervals.
+
+These time intervals are called timing events.
+
+The two key methods to use with JavaScript are:
+
+setTimeout(function, milliseconds)
+Executes a function, after waiting a specified number of milliseconds.
+
+setInterval(function, milliseconds)
+Same as setTimeout(), but repeats the execution of the function continuously.
+The setTimeout() and setInterval() are both methods of the HTML DOM Window object.
+
+
+JavaScript Window Navigator
+------------------------------
+
+The window.navigator object contains information about the visitor's browser.
+
+Window Navigator
+The window.navigator object can be written without the window prefix.
+
+Some examples:
+
+navigator.cookieEnabled
+navigator.appCodeName
+navigator.platform
+
+
+
+JavaScript Window History
+-----------------------------
+
+The window.history object contains the browsers history.
+
+Window History
+The window.history object can be written without the window prefix.
+
+To protect the privacy of the users, there are limitations to how JavaScript can access this object.
+
+Some methods:
+
+history.back() - same as clicking back in the browser
+history.forward() - same as clicking forward in the browser
+
+
+
+
+
+JavaScript Window Location
+==========================
+
+
+The window.location object can be used to get the current page address (URL) and to redirect the browser to a new page.
+
+Window Location
+The window.location object can be written without the window prefix.
+
+Some examples:
+
+window.location.href returns the href (URL) of the current page
+window.location.hostname returns the domain name of the web host
+window.location.pathname returns the path and filename of the current page
+window.location.protocol returns the web protocol used (http: or https:)
+window.location.assign() loads a new document
+
+
+
+
+
+JavaScript Window Screen
+The window.screen object contains information about the user's screen.
+
+Window Screen
+The window.screen object can be written without the window prefix.
+
+Properties:
+
+screen.width
+screen.height
+screen.availWidth
+screen.availHeight
+screen.colorDepth
+screen.pixelDepth
+
+
+
+
+
+
+
+
+
+
+
+                        JavaScript Window - The Browser Object Model
+                        ---------------------------------------------
+ The Browser Object Model (BOM) allows JavaScript to "talk to" the browser.
+
+The Browser Object Model (BOM)
+There are no official standards for the Browser Object Model (BOM).
+
+Since modern browsers have implemented (almost) the same methods and properties
+ for JavaScript interactivity, it is often referred to, as methods and 
+ properties of the BOM.
+
+The Window Object
+------------------
+The window object is supported by all browsers. It represents the browser's window.
+
+All global JavaScript objects, functions, and variables automatically become members of the window object.
+
+
+
+
+
+
+
+
+
+
+
+                                 Web APIs - Introduction
+                                 -------------------------
+
+A Web API is a developer's dream.
+
+It can extend the functionality of the browser
+It can greatly simplify complex functions
+It can provide easy syntax to complex code
+What is Web API?
+API stands for Application Programming Interface.
+
+A Web API is an application programming interface for the Web.
+
+A Browser API can extend the functionality of a web browser.
+
+A Server API can extend the functionality of a web server.
+
+Browser APIs
+All browsers have a set of built-in Web APIs to support complex operations, and to help accessing data.
+
+For example, the Geolocation API can return the coordinates of where the browser is located.
+
+Third Party APIs
+Third party APIs are not built into your browser.
+
+To use these APIs, you will have to download the code from the Web.
+
+Examples:
+
+YouTube API - Allows you to display videos on a web site.
+Twitter API - Allows you to display Tweets on a web site.
+Facebook API - Allows you to display Facebook info on a web site.
+
+
+
+
+
+
+
+
+
+                                     AJAX Introduction
+                                     --------------------
+
+AJAX is a developer's dream, because you can:
+
+Read data from a web server - after the page has loaded
+Update a web page without reloading the page
+Send data to a web server - in the background
+
+
+What is AJAX?
+AJAX = Asynchronous JavaScript And XML.
+
+AJAX is not a programming language.
+
+AJAX just uses a combination of:
+
+A browser built-in XMLHttpRequest object (to request data from a web server)
+JavaScript and HTML DOM (to display or use the data)
+AJAX is a misleading name. AJAX applications might use XML to transport data, 
+but it is equally common to transport data as plain text or JSON text.
+
+AJAX allows web pages to be updated asynchronously by exchanging data with a
+ web server behind the scenes. This means that it is possible to update parts
+  of a web page, without reloading the whole page.
+
+
+
+1. An event occurs in a web page (the page is loaded, a button is clicked)
+2. An XMLHttpRequest object is created by JavaScript
+3. The XMLHttpRequest object sends a request to a web server
+4. The server processes the request
+5. The server sends a response back to the web page
+6. The response is read by JavaScript
+7. Proper action (like page update) is performed by JavaScript
+
+Modern Browsers (Fetch API)
+Modern Browsers can use Fetch API instead of the XMLHttpRequest Object.
+
+The Fetch API interface allows web browser to make HTTP requests to web servers.
+
+If you use the XMLHttpRequest Object, Fetch can do the same in a simpler way.
+
+
+
+                                JSON - Introduction
+                                -------------------
+
+JSON stands for JavaScript Object Notation
+
+JSON is a text format for storing and transporting data
+
+JSON is "self-describing" and easy to understand
+
+What is JSON?
+JSON stands for JavaScript Object Notation
+JSON is a lightweight data-interchange format
+JSON is plain text written in JavaScript object notation
+JSON is used to send data between computers
+JSON is language independent *
+*
+The JSON syntax is derived from JavaScript object notation, but the JSON format is text only.
+
+Code for reading and generating JSON exists in many programming languages.
+
+The JSON format was originally specified by Douglas Crockford.
+The JSON format is syntactically similar to the code for creating JavaScript objects. Because of this, a JavaScript program can easily convert JSON data into JavaScript objects.
+
+Since the format is text only, JSON data can easily be sent between computers, and used by any programming language.
+
+
+Storing Data
+When storing data, the data has to be a certain format, and regardless of where you choose to store it, text is always one of the legal formats.
+
+JSON makes it possible to store JavaScript objects as text.
+
+
+
+
+                          JavaScript / jQuery DOM Selectors
+                          ===============================
+
+jQuery was created in 2006 by John Resig. It was designed to handle Browser Incompatibilities and to simplify HTML DOM Manipulation, Event Handling, Animations, and Ajax.
+
+For more than 10 years, jQuery has been the most popular JavaScript library in the world.
+However, after JavaScript Version 5 (2009), most of the jQuery utilities can be solved with a few lines of standard JavaScript:
+
+
+
+
+
+                                JavaScript Graphics
+                                ----------------------
+Graphic Libraries
+JavaScript libraries to use for all kinds of graphs:
+
+Plotly.js  -> Plotly.js is a charting library that comes with over
+               40 chart types, 3D charts, statistical graphs, and SVG maps.
+
+
+Chart.js ->  Chart.js comes with many built-in chart types:
+
+Scatter
+Line
+Bar
+Radar
+Pie and Doughnut
+Polar Area
+Bubble
+
+
+Google Chart ->
+From simple line charts to complex tree maps, Google Chart provides a number of built-in chart types:
+
+Scatter Chart
+Line Chart
+Bar / Column Chart
+Area Chart
+Pie Chart
+Donut Chart
+Org Chart
+Map / Geo Chart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               #Variable
+               ==========
+
+=> It's like a container to store a data it's known as Variable
+  variable creation
+
+  it should not be any keyword .
+
+  declaration   var name ;
+  declaration and initialization var name = value ;
+
+  var a = 12 ;  //old js
+  let a = 12 ;  //new js
+  const a = 12; //new js
+
+
+  var = > functional scope
+  =========================
+
+  fuction(){
+    if(true){
+        var a= 12;
+    }
+    console.log(a);
+    //pure fuction me kahi bhi 
+  }
+
+
+  let => block scope
+  ==================
+
+  fuction(){
+    if(true){
+        let a= 12;
+
+        //it can use hear only to the nearest block
+        // jis block ke andar define hai bass ushi me.
+    }
+    console.log(a); //it will give error 
+  }
+
+
+
+  const => Block scope
+  ====================
+fuction(){
+    if(true){
+        let a= 12;
+        a = 66;
+        //error de dega
+
+        //it can use hear only to the nearest block
+        // jis block ke andar define hai bass ushi me.
+        and another disadvantage is iski value bhi change 
+        nahi kar sakte baad within the blck 
+    }
+    console.log(a); //it will give error 
+  }
+
+
+******************************************************************************************
+
+       what is  console.log();  console.warn(); console.error();
+    ==============================================================
+
+
+console.log();  => mai problem me ho sakta hu .
+console.warn();  => problem ho sakti hai! samajh lena it 's more like warning .
+console.error(); => lo yaar dikkat ho gyi bolo tha tumko 
+                   samajh jao yaar .
+
+log() => basic print diya aisa aisa hai .
+warn() => warning mili hai samajh jao .
+error => gallti ho gyi bhai ..
+
+*************************************************************************************
+
+
+console.log("Hello Duniya");
+console.warn("hello ") => ek warning dikhegi 
+console.error("hello hi ") => error a jayega
+
+
+cntr+shift+j in browser to open console
+
+used double quotesin all three in compulosory
+
+
+
+***********************************************************************************************
+
+                conditionals
+                ==============
+
+decision making
+
+agar magar 
+
+what is if  else  else if ?
+
+if => isme hume ek aise condition likhni hoti hai jo ya to hume true 
+    degi ya false degi . matlba if humesha true ya false
+    return karta hai .
+    if true than if block exectues otherwise else will run .
+
+else if :  jab agar ek se jada condition deni ho to else if 
+        ka use karen 
+
+        if name==lalit :
+             hello
+        else if  name ==dev
+              hii
+        else ; 
+             byee
+
+
+
+  loops  kya hota hai 
+  ===================
+kisi bhi kaam ko baar baar karwana ho to hum loops ka  use 
+karte hai .
+
+just like comupteres they can do tast without errors , witho rest ..
+
+
+
+for loop=======>
+
+for loop contains 3 things inside it .
+1) start 
+2) end 
+3) change
+
+      for ( var i =0 ; i<6 ; i++){
+        console.log(i);
+      }
+
+
+while loop => while is a kind of loop which just take one 
+            parameter which is the condition 
+            it runs until the condition is fullfilled .
+
+   var i =0;
+   while (i < 5)  {
+    console.log(i)
+    i++
+   }   
+
+   parameter me aise conditon hona chiye jha jakar loop ruke
+   and baraces ke andar variable hoga uska badana yha kaam
+   karna hi hai nahi to infintie loop chal jayega.
+
+
+           
+*****************************************************************************
+
+              
+                      ES5 and Es6 
+                      ===========
+
+basically javascript has two main version the older verision is
+ES5 and ES6 new version .
+
+                     
+       ES5                                ES6
+    var                                let, const
+    functions:
+    - fucn statement                to make fucntions in   
+    - func expression               ES6 we hava only one way
+                                    -> Fat arrow fucntion
+    - anonymous fucn      
+
+
+ES5 and Es6 both are installed on your browser .
+you don't have to choose anything .
+
+es5 + es6 = new javascript ( add on hua hai)
+
+
+
+ ****************************************************************************************
+                     fucntions
+                     =========
+
+ we write some code to use it multiple times and named it 
+ called as function
+
+ function dance(){
+
+ }
+
+dance()
+
+************************************************************
+
+  syntax: 
+
+   function name(){
+        statement1;
+        statement2;
+        statement3;
+        .....
+   }
+
+
+   // name ()     this is called calling .
+
+
+   *************************************************************************
+                   ES5 fucntiions
+                   ===============
+
+  In Old js fucntions are of three types : 
+  fucntion statement :
+
+           fucntion name(){
+
+
+           }
+
+  fucntion expression:
+
+            var a = fucntion(){
+
+            }
+
+    anonymous fucn :
+
+            fucntion(){
+
+                // they are used in callback 
+            }
+
+
+*******************************************************
+
+                 Es6 fucntions
+                 ===============
+
+arrow fucntion
+(fat arrow fucntions )
+
+  ()=> {
+    ......
+    ........
+
+  }
+
+  var name = () => {
+    ..........
+    ......
+  }
+
+
+
+  ************************************************************************
+
+                fat -arrow fucntion with one parameter
+                =======================================
+
+(a)=> {  
+    //isko fat hata sakte ho () apki marzi ..
+
+
+}
+
+
+ fat arrow fucntion with implict return 
+ ======================================
+()=> statemtnt  //direct statement without curly braces .
+
+
+jab bhi fuction fucture me return hoga to yeah value return 
+ho jayegi .
+
+*************************************************************************
+
+                    return
+                    =======
+return form the place where you came from .
+matlab fucntion jha se bhi call hua hai wha parr hi chale jaye .
+
+
+fuction product(a,b){
+    //return the product of a and b 
+    return a*b ;
+
+};
+
+console.log(product(6,10));
+
+
+***************************************************************************
+
+                 Arrays
+                 ======
+
+Arrays can store 1 or more than 1 values of similar types
+
+var a = 1;
+
+var a = [1,2,3] ;
+a ek variable hai jo array ko hold karta hai 
+isme indexing bhi hoti hai .
+
+indexing start from zero .
+  ***************************************************************************
+
+                     Array s helper methods 
+                     =======================
+push , pop , shift an unshift
+
+var arr = [1,2,3,4] isme kuch add karna hai to  push use karend
+
+arr.push(4); //last me add ho jayed
+
+arr.pop(); //akhri no hat jayeaga
+
+arr.shift(); //ishe array ka pehle memeber hat jayega .
+
+arr.unshift(0);  // htis will add zero at the first posiot\ sabse pehel o-index .
+
+******************************************************************************
+
+                       Objects
+                       =========
+
+javascript me Objects boht easy 
+apko kisi nhi chhexz ke bare me information deni hai to aap 
+objects use kar sakte hai .
+
+ek cheez ki information => objects
+boht sare cheez ki information => array .
+
+
+
+   var cam = {
+    colour : "black" ,                 //is pure ko object kehte hai
+    model : "Zp49" ,
+    name : "nikon Z5 " ,
+    case : "plastic" 
+
+   }
+
+   ********************************************************************************
+
+ var bottle = {
+      name : "plastic ki bottel" ,   //comma lagana yasdd rakhna 
+      material : "plastic" ,
+      coulur : "traspaent"
+
+  }
+
+
+  //kisi bhii real world cheeze ka descriptions
+
+
+
+  ************************************************************
+ 
+
+
+              # js learns what  that matter
+              ================================
+
+
+JavaScript
+-----------
+
+JavaScript is the world's most popular programming language.
+
+JavaScript is the programming language of the Web.
+
+JavaScript is easy to learn.
+
+Why Study JavaScript?
+------------------------
+
+JavaScript is one of the 3 languages all web developers must learn:
+
+   1. HTML to define the content of web pages
+
+   2. CSS to specify the layout of web pages
+
+   3. JavaScript to program the behavior of web pages
+
+
+Version of JavaScript:
+---------------------------
+
+The Original JavaScript ES1 ES2 ES3 (1997-1999)
+The First Main Revision ES5 (2009)
+The Second Revision ES6 (2015)
+All Yearly Additions (2016, 2017, 2018, 2019, 2020)
+
+Commonly Asked Questions
+How do I get JavaScript?
+Where can I download JavaScript?
+Is JavaScript Free?
+---------------------
+
+                                 information
+                                 ============
+
+You don't have to get or download JavaScript.
+
+JavaScript is already running in your browser on your computer, on your tablet, and on your smart-phone.
+
+JavaScript is free to use for everyone.
+JavaScript accepts both double and single quotes:
+
+JavaScript and Java are completely different languages, both in concept and design.
+
+JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+
+ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
+
+JavaScript Can Change HTML Content
+
+JavaScript Can Change HTML Attribute Values
+
+JavaScript Can Change HTML Styles (CSS)
+
+JavaScript Can Hide HTML Elements
+
+JavaScript Can Show HTML Elements
+
+
+-----------------------------------------------------------------------------------------
+
+
+                                       Boiler plate
+                                       =============
+
+The <script> Tag
+In HTML, JavaScript code is inserted between <script> and </script> tags.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> </title>
+</head>
+<body>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "My First JavaScript";
+</script>
+
+</body>
+</html> 
+
+----------------------------------------------------------------------------
+                                 
+                          JavaScript Functions and Events
+                          ==================================
+
+A JavaScript function is a block of JavaScript code, that can be 
+executed when "called" for.
+
+For example, a function can be called when an event occurs, like 
+when the user clicks a button.
+
+JavaScript in <head> or <body>
+You can place any number of scripts in an HTML document.
+
+Scripts can be placed in the <body>, or in the <head> section 
+of an HTML page, or in both.
+
+ Note-:
+ -----
+
+ Placing scripts at the bottom of the <body> element improves the 
+ display speed, because script interpretation slows down the display.
+
+
+JavaScript files have the file extension .js.
+
+To use an external script, put the name of the script file in the src (source) attribute of a <script> tag:
+
+Example
+<script src="myScript.js"></script>
+
+
+
+External JavaScript Advantages
+Placing scripts in external files has some advantages:
+
+It separates HTML and code
+It makes HTML and JavaScript easier to read and maintain
+Cached JavaScript files can speed up page loads
+
+An external script can be referenced in 3 different ways:
+With a full URL (a full web address)
+With a file path (like /js/)
+Without any path
+
+
+--------------------------------------------------------------------------------------
+
+
+                            javascript output
+                            =================
+
+JavaScript Display Possibilities
+JavaScript can "display" data in different ways:
+
+Writing into an HTML element, using innerHTML
+Writing into the HTML output using document.write()
+Writing into an alert box, using window.alert()
+Writing into the browser console, using console.log()
+
+
+---------------------------------------------------------------------------------------------------
+
+                            JavaScript Statements
+                            ======================
+
+JavaScript Programs
+A computer program is a list of "instructions" to be "executed" 
+by a computer.
+
+In a programming language, these programming instructions are called
+ statements.
+
+A JavaScript program is a list of programming statements.
+
+In HTML, JavaScript programs are executed by the web browser.
+
+
+
+JavaScript statements are composed of:
+
+(Values, Operators, Expressions, Keywords, and Comments.)
+
+This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":
+
+
+-> Most JavaScript programs contain many JavaScript statements.
+
+-> The statements are executed, one by one, in the same order as 
+   they are written.
+
+-> JavaScript programs (and JavaScript statements) are often called 
+  JavaScript code.
+
+
+Semicolons ;
+------------
+
+Semicolons separate JavaScript statements.
+Add a semicolon at the end of each executable statement:
+When separated by semicolons, multiple statements on one line are allowed:
+
+Note=>
+-------
+On the web, you might see examples without semicolons.
+Ending statements with semicolon is not required, but highly 
+recommended.
+
+JavaScript ignores multiple spaces. You can add white space to your script to 
+make it more readable.
+JavaScript ignores multiple spaces. You can add white space to your script to 
+make it more readable.
+
+For best readability, programmers often like to avoid code lines longer than 80 characters.
+
+If a JavaScript statement does not fit on one line, the best place to break 
+it is after an operator
+
+JavaScript Code Blocks
+---------------------
+JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.
+The purpose of code blocks is to define statements to be executed together.
+One place you will find statements grouped together in blocks, is in JavaScript functions:
+
+
+JavaScript statements often start with a keyword to identify the JavaScript 
+action to be performed.
+
+Keyword	Description:
+
+var	          Declares a variable
+let	          Declares a block variable
+const	        Declares a block constant
+if	          Marks a block of statements to be executed on a condition
+switch	      Marks a block of statements to be executed in different cases
+for	          Marks a block of statements to be executed in a loop
+function	    Declares a function
+return	      Exits a function
+try	          Implements error handling to a block of statements
+
+JavaScript keywords are reserved words. Reserved words 
+cannot be used as names for variables.
+
+
+============================================================================================================
+          
+                                JavaScript Values
+                                --------------------
+
+The JavaScript syntax defines two types of values:
+
+->Fixed values
+->Variable values
+
+Fixed values are called Literals.
+Variable values are called Variables.   
+
+JavaScript Literals
+-----------------------
+
+The two most important syntax rules for fixed values are:
+
+1. Numbers are written with or without decimals:  1001  10.50
+2. Strings are text, written within double or single quotes:  "John Doe" 
+
+
+
+===========================================================================================================
+
+
+                          javascript variables
+                          ======================
+
+In a programming language, variables are used to store data values.
+JavaScript uses the keywords var, let and const to declare variables.
+An equal sign is used to assign values to variables.
+
+When to Use var, let, or const?
+1. Always declare variables
+
+2. Always use const if the value should not be changed
+
+3. Always use const if the type should not be changed (Arrays and Objects)
+
+4. Only use let if you can't use const
+
+5. Only use var if you MUST support old browsers.
+It's a good programming practice to declare all variables at the beginning of a script.
+
+
+If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.
+
+JavaScript Dollar Sign $
+------------------------
+Since JavaScript treats a dollar sign as a letter, identifiers containing $ are valid variable names:
+
+Example
+let $ = "Hello World";
+let $$$ = 2;
+let $myMoney = 5;
+Using the dollar sign is not very common in JavaScript, but 
+professional programmers often use it as an alias for the main 
+function in a JavaScript library.
+
+In the JavaScript library jQuery, for instance, the main function $ 
+is used to select HTML elements. In jQuery $("p"); means "select all
+ p elements".
+
+
+JavaScript Underscore (_)
+-------------------------
+Since JavaScript treats underscore as a letter, identifiers containing _ are valid variable names:
+
+Example
+let _lastName = "Johnson";
+let _x = 2;
+let _100 = 5;
+Using the underscore is not very common in JavaScript, but a
+convention among professional programmersis to use it as an 
+alias for "private (hidden)" variables.
+
+
+JavaScript Operators
+-----------------------
+JavaScript uses arithmetic operators ( + - * / ) to compute values:
+
+JavaScript uses an assignment operator ( = ) to assign values to variables:
+
+Note
+The var keyword was used in all JavaScript code from 1995 to 2015.
+The let and const keywords were added to JavaScript in 2015.
+The var keyword should only be used in code written for older browsers.
+
+JavaScript Expressions
+----------------------
+An expression is a combination of values, variables, and operators, which computes to a value.
+
+The computation is called an evaluation.
+
+For example, 5 * 10 evaluates to 50:
+The values can be of various types, such as numbers and strings.
+For example, "John" + " " + "Doe", evaluates to "John Doe":
+
+
+JavaScript keywords are used to identify actions to be performed.
+
+The let keyword tells the browser to create variables:
+let x, y;
+x = 5 + 6;
+y = x * 10;
+
+The var keyword also tells the browser to create variables:
+var x, y;
+x = 5 + 6;
+y = x * 10;
+
+In these examples, using var or let will produce the same result.
+
+============================================================================================================
+
+                               javascript Comments
+                               -------------------
+
+Not all JavaScript statements are "executed".
+
+Code after double slashes // or between /* and */ is treated as a comment.
+Comments are ignored, and will not be executed:
+JavaScript comments can be used to explain JavaScript code, and to make it more readable.
+
+JavaScript comments can also be used to prevent execution, when testing alternative code.
+It is most common to use single line comments.
+Block comments are often used for formal documentation.
+
+========================================================================================================================
+
+                             JavaScript Identifiers / Names
+                             -------------------------------
+
+Identifiers are JavaScript names.
+Identifiers are used to name variables and keywords, and functions.
+The rules for legal names are the same in most programming languages.
+
+A JavaScript name must begin with:
+A letter (A-Z or a-z)
+A dollar sign ($)
+Or an underscore (_)
+Subsequent characters may be letters, digits, underscores, or dollar signs.
+
+Note-:
+Numbers are not allowed as the first character in names.
+This way JavaScript can easily distinguish identifiers from numbers.
+
+
+JavaScript is Case Sensitive
+All JavaScript identifiers are case sensitive. 
+
+The variables lastName and lastname, are two different variables:
+JavaScript does not interpret LET or Let as the keyword let.
+
+
+=================================================================================================
+                        
+                            JavaScript and Camel Case
+                            -------------------------
+
+Historically, programmers have used different ways of joining multiple words into one variable name:
+Hyphens:
+first-name, last-name, master-card, inter-city.
+ note-:
+-------
+
+Hyphens are not allowed in JavaScript. They are reserved for subtractions.
+
+Underscore:
+first_name, last_name, master_card, inter_city.
+
+Upper Camel Case (Pascal Case):
+FirstName, LastName, MasterCard, InterCity.
+
+Lower Camel Case:
+JavaScript programmers tend to use camel case that starts with a lowercase letter:
+firstName, lastName, masterCard, interCity.
+
+                         JavaScript Character Set
+                         --------------------------
+JavaScript uses the Unicode character set.
+Unicode covers (almost) all the characters, punctuations, and symbols in the world.
+
+
+=======================================================================================================================
+
+
+                                     javascript let
+
+The let keyword was introduced in ES6 (2015)
+
+Variables defined with let cannot be Redeclared
+
+Variables defined with let must be Declared before use
+
+Variables defined with let have Block Scope
+
+
+ifference Between var, let and const
+Scope	Redeclare	Reassign	Hoisted	Binds this
+var	   No	Yes	Yes	Yes	Yes
+let	Yes	No	Yes	No	No
+const	Yes	No	No	No	No
+
+
+Let Hoisting
+Variables defined with var are hoisted to the top and can be initialized at any time.
+
+Meaning: You can use the variable before it is declared:
+
+
+
+======================================================================================
+
+                                 JavaScript Hoisting
+                                 ------------------
+Hoisting is JavaScript's default behavior of moving declarations to the top.
+
+JavaScript Declarations are Hoisted
+In JavaScript, a variable can be declared after it has been used.
+
+In other words; a variable can be used before it has been declared.
+
+Example 1 gives the same result as Example :
+ 
+x = 5; // Assign 5 to x
+
+elem = document.getElementById("demo"); // Find an element
+elem.innerHTML = x;                     // Display x in the element
+
+var x; // Declare x
+
+
+The let and const Keywords
+Variables defined with let and const are hoisted to the top of 
+the block, but not initialized.
+
+Meaning: The block of code is aware of the variable, but it 
+cannot be used until it has been declared.
+
+Using a let variable before it is declared will result in a 
+ReferenceError.
+
+
+                              JavaScript Use Strict
+                              --------------------------
+
+"use strict"; Defines that JavaScript code should be executed in "strict mode".
+Declaring Strict Mode
+Strict mode is declared by adding "use strict"; to the beginning of a script or a function.
+
+Declared at the beginning of a script, it has global scope (all code in the script will execute in strict mode):
+
+Example
+"use strict";
+x = 3.14;       // This will cause an error because x is not declared
+
+
+Why Strict Mode?
+Strict mode makes it easier to write "secure" JavaScript.
+
+Strict mode changes previously accepted "bad syntax" into 
+real errors.
+
+As an example, in normal JavaScript, mistyping a variable name
+creates a new global variable. In strict mode, this will throws
+an error, making it impossible to accidentally create a global variable.
+
+In normal JavaScript, a developer will not receive any error feedback assigning values to non-writable properties.
+
+In strict mode, any assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object, will throw an error.
+
+
+
+==================================================================================================
+
+                                      
+                               this keyword
+                               ============
+
+What is this?
+In JavaScript, the this keyword refers to an object.
+
+Which object depends on how this is being invoked (used or called).
+
+The this keyword refers to different objects depending on how it is used:
+
+In an object method, this refers to the object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), apply(), and bind() can refer this to any object.
+
+
+
+===================================================================================================
+                             javascript JSON 
+                             --------------
+
+
+JSON is a format for storing and transporting data.
+
+JSON is often used when data is sent from a server to a web page
+What is JSON?
+JSON stands for JavaScript Object Notation
+JSON is a lightweight data interchange format
+JSON is language independent *
+JSON is "self-describing" and easy to understand
+* The JSON syntax is derived from JavaScript object notation 
+syntax, but the JSON format is text only. Code for reading and
+ generating JSON data can be written in any programming language.
+
+
+ ================================================================================================
+  
+  
+
+                               JavaScript Debugging
+                               ----------------------
+
+Code Debugging
+--------------
+Programming code might contain syntax errors, or logical errors.
+
+Many of these errors are difficult to diagnose.
+
+Often, when programming code contains errors, nothing will happen. There are no error messages, and you will get no indications where to search for errors.
+
+Searching for (and fixing) errors in programming code is called code debugging.
+
+JavaScript Debuggers
+-------------------
+
+Debugging is not easy. But fortunately, all modern browsers have 
+a built-in JavaScript debugger.
+
+Built-in debuggers can be turned on and off, forcing errors to be 
+reported to the user.
+
+With a debugger, you can also set breakpoints (places where code 
+execution can be stopped), and examine variables while the code is executing.
+
+Normally (otherwise follow the steps at the bottom of this page), 
+you activate debugging in your browser with the F12 key, and select
+ "Console" in the debugger menu.
+
+Setting Breakpoints
+In the debugger window, you can set breakpoints in the JavaScript code.
+
+At each breakpoint, JavaScript will stop executing, and let you examine JavaScript values.
+
+After examining values, you can resume the execution of code (typically with a play button).
+
+Chrome
+Open the browser.
+From the menu, select "More tools".
+From tools, choose "Developer tools".
+Finally, select Console.
+
+Debugging is the process of testing, finding, and reducing bugs
+ (errors) in computer programs.
+The first known computer bug was a real bug (an insect) stuck
+ in the electronics.
+
+                                
+                                
+                              JavaScript Errors
+                              ------------------
+
+Throw, and Try...Catch...Finally
+The try statement defines a code block to run (to try).
+
+The catch statement defines a code block to handle any error.
+
+The finally statement defines a code block to run regardless of the result.
+
+The throw statement defines a custom error.
+
+
+                              JAVASCRIPT OPERATOR PRECEDENCE
+
+Operator Precedence Values
+Expressions in parentheses are computed before the rest of the expression
+Function are executed before the result is used in the rest of the expression
+Val	Operator	Description	Example
+18	( )	Expression Grouping	(100 + 50) * 3
+17	.	Member Of	person.name
+17	[]	Member Of	person["name"]
+17	?.	Optional Chaining ES2020	x ?. y
+17	()	Function Call	myFunction()
+17	new	New with Arguments	new Date("June 5,2022")
+16	new	New without Arguments	new Date()
+Increment Operators
+Postfix increments are executed before prefix increments
+15	++	Postfix Increment	i++
+15	--	Postfix Decrement	i--
+14	++	Prefix Increment	++i
+14	--	Prefix Decrement	--i
+NOT Operators
+14	!	Logical NOT	!(x==y)
+14	~	Bitwise NOT	~x
+Unary Operators
+14	+	Unary Plus	+x
+14	-	Unary Minus	-x
+14	typeof	Data Type	typeof x
+14	void	Evaluate Void	void(0)
+14	delete	Property Delete	delete myCar.color
+Arithmetic Operators
+Exponentiations are executed before multiplications
+Multiplications and divisions are executed before additions and subtractions
+13	**	Exponentiation ES2016	10 ** 2
+12	*	Multiplication	10 * 5
+12	/	Division	10 / 5
+12	%	Division Remainder	10 % 5
+11	+	Addition	10 + 5
+11	-	Subtraction	10 - 5
+11	+	Concatenation	"John" + "Doe"
+Shift Operators
+10	<<	Shift Left	x << 2
+10	>>	Shift Right (signed)	x >> 2
+10	>>>	Shift Right (unsigned)	x >>> 2
+Relational Operators
+9	in	Property in Object	"PI" in Math
+9	instanceof	Instance of Object	x instanceof Array
+Comparison Operators
+9	<	Less than	x < y 
+9	<=	Less than or equal	x <= y
+9	>	Greater than	x > y
+9	>=	Greater than or equal	x >= Array
+8	==	Equal	x == y
+8	===	Strict equal	x === y
+8	!=	Unequal	x != y
+8	!==	Strict unequal	x !== y
+Bitwise Operators
+7	&	Bitwise AND	x & y
+6	^	Bitwise XOR	x ^ y
+5	|	Bitwise OR	x | y
+Logical Operators
+4	&&	Logical AND	x && y
+3	||	Logical OR	x || y
+3	??	Nullish Coalescing ES2020	x ?? y
+Conditional (ternary) Operator
+2	? :	Condition	? "yes" : "no"
+Assignment Operators
+Assignments are executed after other operations
+2	=	Simple Assignment	x = y
+2	:	Colon Assignment	x: 5
+2	+=	Addition Assignment	x += y
+2	-=	Subtraction Assignment	x -= y
+2	*=	Multiplication Assignment	x *= y
+2	**=	Exponentiation Assignment	x **= y
+2	/=	Division Assignment	x /= y
+2	%=	Remainder Assignment	x %= y
+2	<<=	Left Shift Assignment	x <<= y
+2	>>=	Right Shift Assignment	x >>= y
+2	>>>=	Unsigned Right Shift	x >>>= y
+2	&=	Bitwise AND Assignment	x &= y
+2	|=	Bitwise OR Assignment	x |= y
+2	^=	Bitwise XOR Assignment	x ^= y
+2	&&=	Logical AND Assignment	x &&= y
+2	||=	Logical OR Assignment	x ||= y
+2	=>	Arrow	x => y
+2	yield	Pause / Resume	yield x
+2	yield*	Delegate	yield* x
+2	...	Spread	... x
+1	,	Comma	x , y
+
+
+                                   JavaScript Regular Expressions
+                                   ==============================
+
+A regular expression is a sequence of characters that forms a search pattern.
+
+The search pattern can be used for text search and text replace operations.
+
+
+What Is a Regular Expression?
+A regular expression is a sequence of characters that forms a search pattern.
+
+When you search for data in a text, you can use this search pattern to describe what you are searching for.
+
+A regular expression can be a single character, or a more complicated pattern.
+
+Regular expressions can be used to perform all types of text search and text replace operations.
+
+
+
+
+
+
+
+                                     JavaScript Coding Conventions
+                                     ===============================
+
+Coding conventions are style guidelines for programming. They typically cover:
+
+Naming and declaration rules for variables and functions.
+Rules for the use of white space, indentation, and comments.
+Programming practices and principles.
+Coding conventions secure quality:
+
+Improve code readability
+Make code maintenance easier
+Coding conventions can be documented rules for teams to follow, or just be your individual coding practice.
+
+This page describes the general JavaScript code conventions used by W3Schools.
+You should also read the next chapter "Best Practices", and learn how to avoid coding pitfalls.
+Coding conventions are not used by computers. Most rules have little impact on the execution of programs.
+
+Indentation and extra spaces are not significant in small scripts.
+
+For code in development, readability should be preferred. Larger production scripts should be minimized.
+
+
+
+                                    JAVASCRIPT typeof
+                                    =================
+
+You can use the typeof operator to find the data type of a JavaScript variable.
+
+Example
+typeof "John"                 // Returns "string"
+typeof 3.14                   // Returns "number"
+typeof NaN                    // Returns "number"
+typeof false                  // Returns "boolean"
+typeof [1,2,3,4] 
+
+
+
+                                JAVASCRIPT Events
+                                ================
+
+JavaScript Events
+HTML events are "things" that happen to HTML elements.
+
+When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+
+HTML Events
+An HTML event can be something the browser does, or something a user does.
+
+Here are some examples of HTML events:
+
+An HTML web page has finished loading
+An HTML input field was changed
+An HTML button was clicked
+Often, when events happen, you may want to do something.
+
+JavaScript lets you execute code when events are detected.
+
+HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.
+
+                                JavaScript Data Types
+                                =======================
+JavaScript has 8 Datatypes
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+The Object Datatype
+The object data type can contain:
+
+1. An object
+2. An array
+3. A date
+
+
+
+                           JavaScript Sets
+                           -------------------
+
+A JavaScript Set is a collection of unique values.
+
+Each value can only occur once in a Set.
+
+Essential Set Methods
+Method	Description
+new Set()	Creates a new Set
+add()	Adds a new element to the Set
+delete()	Removes an element from a Set
+has()	Returns true if a value exists in the Set
+forEach()	Invokes a callback for each element in the Set
+values()	Returns an iterator with all the values in a Set
+Property	Description
+size	Returns the number of elements in a Set
+
+
+
+                                        JavaScript Performance
+                                        =======================
+
+Reduce Activity in Loops
+-------------------------
+Loops are often used in programming.
+
+Each statement in a loop, including the for statement, is executed for each iteration of the loop.
+
+Statements or assignments that can be placed outside the loop will make the loop run faster.
+
+
+Reduce DOM Access
+----------------
+Accessing the HTML DOM is very slow, compared to other JavaScript statements.
+
+If you expect to access a DOM element several times, access it once, and use it as a local variable:
+
+Example
+const obj = document.getElementById("demo");
+obj.innerHTML = "Hello";
+
+
+Avoid Using with
+------------------------
+Avoid using the with keyword. It has a negative effect on speed. It also clutters up JavaScript scopes.
+
+The with keyword is not allowed in strict mode.
+
+
+
+
+
+
+
+
+
+
+                 Sheryians Coding tutorial
+                 --------------------------
+
+
+
+1) js
+2) word vs keyword
+3) var const let
+4) the difference
+5) window object
+6) browser context api 
+7) stack
+8) heap memory
+9) execution context
+10) lexical environment
+11) hoisting
+12) types in js
+13) how to copy reference values
+14) conditionals
+15) if else else-if
+16) truthy vs false
+17) switch
+
+
+
+********************************************************************
+
+
+                word vs keyword
+                ================
+
+
+Word ->  lalit jiska js ka interperter ke liye koi matlab nahi hai wo 
+       uske liye simple word hai .
+
+Keyword -> Are the reserved words that'has some special meaning 
+          defined by that programming langauge ( matlab jisse 
+          interperter ke liye kuch special meaning ho jisse 
+          vo janta ho ).
+
+
+
+In JavaScript you cannot use these reserved words as variables, labels, or function names:
+
+abstract	  arguments	  await*	        boolean
+break	      byte	      case	          catch
+char	      class*	    const	          continue
+debugger	  default	    delete	          do
+double	    else	       enum*	         eval
+export*	    extends*	   false	        final
+finally	    float	       for	          function
+goto	      if	         implements	    import*
+in	        instanceof	  int	          interface
+let*	      long	        native	      new
+null	      package	      private	      protected
+public	    return	      short	        static
+super*	    switch	     synchronized	  this
+throw	      throws	      transient	    true
+try	        typeof	      var	          void
+volatile	  while	        with	        yield
+
+Words marked with* are new in ECMAScript 5 and 6.
+
+
+Removed Reserved Words
+The following reserved words have been removed from the ECMAScript 5/6 standard:
+
+abstract	    boolean	    byte	      char
+double	      final	      float	      goto
+int	          long	       native	    short
+synchronized	throws	     transient	volatile
+
+Do not use these words as variables. ECMAScript 5/6 does not have full support in all browsers.
+
+
+
+
+=========================================================================================================================
+
+                     var and const
+
+score =3 
+lives = 3 
+
+code me koi bhi data store karne ke liye jiska use hota hai 
+bo hai  varibale .
+
+varibale => jiske valuse dadli
+constant => jo change na ho 
+
+// var const let
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+                    hoisting
+                    ========
+
+hoisting matlab variable ko bannane se pehle use kar sakte hai .
+-> Varibles and fucntiions are hoisted whcih means their
+  declaration is moved on the top of the code 
+
+  matlab js     var a = 13; 
+             
+               var a; //declaration
+               a = 12;  //initialization
+      //upper wali line ko neeche ki 2 line me convert kar degin .
+
+  
+  console.log(a);  //erroer nahi milega undefined milega
+  var a = 12;
+
+
+  Difference btw undefined  and   not-defined
+
+  1) undefined matlab bo cheez ho parr uski value na ho pata nahi hai .
+      existence ho exact value kya hai vo nahi pata .
+
+  2) not - defined => existence hi nahi hai 
+   
+
+
+   reason hai hoisting matlba
+
+   var b ;  top prr move ho gya 
+
+   console.log(b);
+
+   var b = 12 ;  //  yeah line convert ho jayegi or into two line 
+   and declaration part upper chala jayeaga  so jab jum 
+   b ki value print karwaenge to bo bolege undefined because 
+   upper bass decalration shift hua a initialization part abhi 
+   bhi neeche hi hai ..
+
+
+
+
+   **************************************************************************************
+
+
+
+                             Types in JS 
+                             ===========
+
+1) primitives = number, string , null , undefined , boolean
+
+2) reference  = [] ,() , {}
+
+->  Aisi  koi bhi value jisko copy karne par real copy nahi hota,
+ balki us main value ka reference pass ho jata hai ( address 
+ pass hota hia ), use hum reference value kehte hai , aur jisko
+  copy karne  par real value copy wo jaye wo value primitive 
+  type value hote hai .
+
+ var a = [12,13];
+ var b = a;
+  b.pop();
+  a = [12]
+
+
+  value me bracket nahi hai primitive 
+
+  ========================================================================================================
+
+                                Conditonal = if -else else if
+                                ===========================
+
+
+  => jab baat agar magar ki ayegi 
+  => decision making 
+
+  if() {
+
+
+  }
+
+  else if (){
+
+
+  }
+
+  else(){
+
+  }
+
+
+------------------------------------------------------------------------
+
+                               loops - for while 
+                               ==================
+
+loop ka matlab repeat ho raha hai
+
+for (var i=0 ; i<=10; i++){
+  console.log(i);
+}
+
+var i =1
+while (i>11)
+    
+    print(i);
+    i++;
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+                             Function
+                             =========
+
+fucntion is named block of code 
+
+Functions mainly 3 kaam ke liye hote hai :
+-> jab aapka code ap turant nahi chalana chahte ho future me
+   chalana chahate ho .
+-> Jab aapna code reuse karna chahate ho .
+-> jab aap code chalna chahte ho haar baar with differnet data .
+
+
+fucntion abcd(){
+
+    //fucntion statement ;
+
+}
+abcd();
+
+Their  are 6 style of fucntions 3 in ES5 and 3 in ES6 
+
+======================================================================================================
+ 
+                                fucntion parameter and arguments
+                                ==============================
+
+fucntion abcd(a,b,c) {// parametrs -> jisme value store hoti hai 
+  console.log(a);                    argument wali 
+
+} 
+
+abcd(12);    // arguments are the real values  jo hum dete hai call karte waqt.
+
+
+
+===================================================================================
+
+                                 Arrays 
+                                 ======
+
+hum ek variable me ek value store kar pate hai parr jab hume ek se
+jayda value store karni ho to  hum arrays ka use karenge .
+
+var a = [12 , 3,4 ];
+
+array = is a group of values 
+
+var arr - [1,2,3,4,56]
+isme positive indexing hoti hai start 0
+
+
+push pop shift
+
+push addd elemen in the last 
+unshift shiry me valuse jodene ke liye 
+pop last se value hatane ke liye 
+ var arr= [1,2,3,4,5,6,7,8]
+arr.splice(2,1)  // 2 is the index and 1 kitni vlaue hatani hai .
+
+
+**********************************************************************************************
+
+                           objects 
+                           ---------
+
+ =>  object is any real world 
+
+ var a = {} ;  // yeah ek blank object hai curly baraces ko js me objecct bolte hai .
+
+ // 2) filled object 
+
+ var a ={
+  age: 12,
+  name: "Lalit",
+  email: "gourlalit11@gmail.com",
+  contact : 997768339
+  luck: fucntion(){
+        }                      // yeah ek method hai
+                      // object ke andar jidki property fucntion ho use 
+                      hum method bolte hai 
+ }
+
+ // how to acces a value from the object ..
+
+ a.email
+
+
+
+/// updating object properties 
+a.name="devendra";
+
+==========================================================================================================
+
+
+
+
+
+                             Advanced javascript concepts part(1)
+                             ======================================
+
+
+                                  js two version
+                                /                \
+
+                      ES5                            ES6 (new version of js)
+
+
+hum done use kar sakte hai ..
+
+// old  me bass var hai                   // new me let const 
+
+difference =>
+
+1) var old js main the           |  1) let const new js mein hai
+2) var fuction scoped hota hai   |  2)let const braces scoped hota hai 
+3) var adds itself to the        |  3) lets const doesn't adds
+   window object .               |
+
+js language mein kuch cheeje nahi hai jo hum use kar
+sakte hai aur wo cheeje hume js se nahi balki browser se multi 
+hai , aise sare features jo js ka part nahi hai but fir bhi use 
+kar sakte hai unhe hum dhoond sakte hai ek particular objects mein jiska
+naam hai window
+alert , prompt , console blur , fetch , find , localstorage, scree, scroll
+
+window
+
+
+=============================================================================================================
+
+                              browser context api
+                              ------------------
+
+
+browser hume 3 cheeze deta hai or vo browser context api kehlati hai .
+1) window
+2) stack
+3) heap memory 
+
+ stack matlab konsi chhez kaise chalegi .
+
+ heap memory => data ya itermediate progarams/ data ko store karne ke liye heap 
+ memory use hoti hai .
+
+ 
+================================================================================================
+
+                 execution context 
+                 ------------------
+
+
+execution context matlab jab bhi hum function chalaayenge fnction 
+apan ek khudka ek imaginary container bana lega jismein uski teen 
+cheeje hogi .
+1) varibales 
+2) functions inside that parent function 
+3) lexical environment of that fucntion 
+   yeah jo container hai imaginary ushi ko hum execution context kehte hai.
+
+ fucntion chalte hi pehle ek imaginary dabba bnata hai ( execution context)
+ 
+
+ function abcd(){
+  var a =12;
+  function def(){
+
+      var b = 12;
+    }
+ }
+
+abcd() chala
+
+lexical environment hume yeah btata hai ki apka fuction kya access
+kar sakta hai kya nahi .
+
+exection context => It is a container where the fucnction's code is 
+                 executed and it's created whenever a fucntion is 
+                 called , it contains 3 things , variables , fucntions 
+                 and lexical environment .
+
+lexical environment hota hai ek chart jisme ye likha hota hai ki
+aapkka particular funtion kin cheezo ko access kar sakta hai and 
+kinko nahi, matlab ki it holds it's scope and scope chain .
+
+==================================================================================
+
+
+               # how to copy reference values 
+               ===============================
+
+with the help of Spread operator 
+
+var a = [1,2,3,4,5,6,7];
+var b = [...a];
+
+[...] => Spread operator 
+
+The JavaScript spread operator (...) allows us to quickly copy all or
+ part of an existing array or object into another array or object.
+ 
+The spread (...) syntax allows an iterable, such as an array or string,
+ to be expanded in places where zero or more arguments (for function 
+ calls) or elements (for array literals) are expected
+he spread operator is commonly used to make deep copies of JS objects. 
+
+
+easy bolu to jha yeah ... dot lage ho wha uski value lakar as it 
+is copy kar do .
+
+var obj = {name : "lalit"};
+var copyobj = {...obj};
+
+
+=====================================================================================================
+                               truthy vs falsy
+                               ----------------
+
+js me kuch bhi likho wo mainly do prakkar mein se kisi ek prakkar ko 
+belong karti hai .
+
+falsy values yeah hai = 0 , false , undefined , null , Nan(not a number) 
+                         document.all
+
+
+=========================================================================================
+
+                                switch
+                                ========
+
+switch(1){
+    case 1:
+        break;
+    case 2:
+        break;
+    default :
+}
+
+
+====================================================================================================
+
+                          forEach / forin  / forof / do-while
+                          ----------------------------------
+
+ forEach : forEach loop sirf array pe chalta hai matlab ki jab bhi tumhara 
+           pass ek array ho , tab use mein kaun aata hai foreach loop .
+
+
+var a = [1,2,3,,4,5,6,7,8,9,10];
+a.forEach(function(val){
+  console.log(val+2)
+
+})
+
+// forEach kabhi bhi by default aapke array mein change nahi karta 
+   wo apko change karke deta hai array ki temporary copy par jiske
+   wajah se array humesha same rehta hai .
+
+
+
+                         forin
+                         -----
+
+Objects parr loop karne ke liye use hota hai forin loop 
+
+var obj ={
+
+      name : "lalit",
+      age : 21,
+      city : "bhopal"   
+}
+
+  for( var key in obj){
+
+        console.log(key);        // isse key pint hogi matlab name  , age...
+        console.log(obj[key]) ;  // isme values print ex lalit 21 ..
+        console.log(key , obj[key]); // ab done stah me print honge 
+  }
+
+
+                      do-while loop
+                      -------------
+var a = 12 ;
+
+do{
+    console.log("hii");
+    a++;
+}
+while(a<15)
+
+// sabse pehle do chalta hai 
+// matlab aise cases jha apko ek  baar to loop chalna hi hai 
+   agar condition false ho jaye to bhi to hum do while ka usee karenge .
+
+ =========================================================================================================
+
+                               callback fucntion
+                               -----------------
+
+=> jab bhi koi aisa code jo baad me chlta hai aap likhoge , kyuki wo 
+   wo code baad me chalta hai js ko ye pata nahi hota ki wo complete hua 
+   ya nahi , aisa code ke completion par js ko btaye jatte hai ki wo 
+   complete hogye aur use chala sakte ho , ye batane ka kamm callback 
+   ka hai .
+
+   yeah ek button hai geta photo form facebook 
+
+   click karne parr facebook ke paas request jayegi or wha se data lekar
+   ayega .  aap mante ho usme kuch time lagega  .
+   so koi to yeah btayege ki wo vapas a gya to yahi kaam callback fucnction
+   ka hota hai .
+
+ setTimeout(function()){
+      console.log("2 second baad chalna ");
+ }, 2000) ;    //2000 milliseconds me hai matlab 2 second 
+
+ //asynchronous js  padha hai inhone nahi padhaya .
+
+
+
+ =========================================================================================
+
+                               what is first class fucntions
+                               -----------------------------
+
+javascript mein ek concept hai jiska matlab hota hai ki app fnc ko use 
+kar sakte ho as a value .
+
+var a = fucntion(){};
+
+fucntion abcd(a){
+
+}
+abcd(function(){console.log("hey");})
+
+
+
+=================================================================================================
+
+
+                                How array is made behind the scenes
+                                -----------------------------------
+
+vat arr= [1,2,3,4,5];
+typeof []  => <'object'>
+
+javascript isko converrt kar deti 
+hai objects me ..
+
+arr= {
+
+  0:1,
+  1:2,
+  2:3,
+  3:4,
+  4:5
+}
+
+arr[-1] =2   //arrya me negative index rahk sakte ho isme rakh 
+               sakte ho kyoki array hai hi nahi .
+
+
+Array.isArray([])      // ke andda jab array hoga to true return karega 
+ -> true                  isse pata chal jayega array hai nahi to object hai .
+
+Array.isArray({})   //object hai to false return kiya .
+-> false
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                        how to delete object properties
+                        ---------------------------------
+
+var a ={
+  age: 12,
+  name: "Lalit",
+  email: "gourlalit11@gmail.com",
+  contact : 997768339
+  luck: fucntion()
+        } 
+
+delete a.age;   // age delete ho jayega 
+a.age= 21 // updating 
+
+
+=================================================================================================
+
+
+
+                        Advanced concept OF JAVASCRIPT
+                        ===============================
+
+1) higher order Function
+2) constructor fucntion
+3) first class function
+4) new keyword
+5) iife  ( immediately invoked function expression)
+6) prototype
+7) prototype inheritence
+8) this call apply bind
+9) pure and impure functions
+10) closures
+
+
+==============================================================================================================
+
+                                      Higher order functions
+                                      ----------------------
+
+Can you Explain what is higher order fun ?
+
+->  Higher order functions are the fucntions which accept a fucntion in
+     a parameter or return a function or both ..
+ ex-> 
+ forEach Methods always takes another fucntion inside it, so forEach is A
+ higher order Function 
+
+1 -> type1 
+
+ function abcd(val){
+
+ }
+
+abcd(fuunction(){})
+
+-----------------------------
+2 -> type 2
+
+function abcd(){
+  return function(){}
+}
+
+abcd()
+
+//this type of fucntions are used in closure .
+
+
+Aisa fucntion jo accept karle ek aur function ya fir wo return karend
+ek aur function ..
+
+=================================================================================================
+
+                                Constructor function
+                                -------------------
+
+mold - saccha 
+
+fucntion saanchaofbiscuit(){
+   this.width=12;
+   this.height=22;
+   this.color = "brwon";
+   thsi.taste = "sugary";
+}
+
+new saanchaofbiscuit()  //isse ek naya instance banega naya biscuit banage 
+ex =>
+var bis1 = new saanchaofbiscuit() ;
+var bis2 = new saanchaofbiscuit() ;
+var bis3 = new saanchaofbiscuit() ;
+var bis4 = new saanchaofbiscuit() ;
+var bis5 = new saanchaofbiscuit() ;
+
+
+fucntion circularButtonRadius(color){
+    this.radius =2;
+    this.color = color;
+    this.icon = false ;
+    this.prseentable = true;
+}
+
+var redbutton = new circularButtonRadius("red");
+var greenbutton = new circularButtonBamo("green);
+
+
+// normal function jismein this ka istmaal  ho and aap fucntion ko 
+   call karte waqt new keyword ka use karein .
+// this by default point karta hai window ko 
+// window kya jha saare browser se related features hote hai .
+
+construtor fucntion ka usee kya hai :
+--------------------------------------
+
+jab aapke pass aisa koi bhi mauka ho ke aapko ek jaisi properties waale 
+bahut sarre elements bannane hai us waqt aap constructor fnc use kar
+sakte ho ..
+
+A function which whenever Invoked with New keyword returns
+An object , if we use "this" keyword inside that fucntion , it 
+returns an object with all of the properties and methods 
+mentioned inside that fucntion  , such fucntion is called 
+constructor fucntion .
+
+fucntion abcd(){
+  this.name="lalit";    // constructor fucntion 
+}
+
+var person1 = new abcd();
+// new keyword infront of function call makes a new blank object 
+and returns to the person1 variable .
+
+
+===================================================================================================
+
+                      FIRST CLASS FUNCTION 
+                      -----------------------
+
+A language is said to have first class fucntions when the functions
+in that languages are treated as  normal variables or like variables. 
+you can save them , you can pass them as argument to another fucntions .
+
+setTimeout(function(){})
+
+================================================================================================
+
+                    new keyword
+                    -----------
+
+new = jab bhi new lagta hai humesha ek blank object apne man mein 
+      bana lo  .
+
+this is our funtion =:
+
+function abcd(){
+  this.age = 12;
+}
+
+after this imagine a blank object like thisss....
+{
+  blank object ke andar jha jah this laga ho vo yah a jeyaga 
+  age = 13;
+}
+
+
+In javascript , The new keyword is used to create an 
+instance of an object basesd on a constructor fucntion.
+The new keyword creates a new empty objects and sets 
+the this keyword to point to the new object .
+
+In order to understand new keyword , do this :
+
+Whenever you encountered a new keyword always imagine a blank pair of 
+curly braces{ } which means a blank object and now move inside the fucntion
+whcich is called just after the New keyword , inside that fucntion all 
+of this keyword  , inside that fucntion all of the This keyword instances
+will add properties and methods inside your blank objects created by the 
+New keyword ..
+
+
+
+=====================================================================================================
+                 
+                 
+                  IIFE  ( immediately invoked function expression)
+                     ==============================================
+
+
+iife  ( immediately invoked function expression) HAI  fucntion ko 
+turant chalane ki kala , is tarreke se ki hum log koi private
+variable bana paaye ( matlab jise change na kar sako baad me ) .
+
+(function(){
+    var a =12;
+})()
+
+function banaye without name then use pranenetheiss ke andar rakh
+lo or useke baad end of parentheses me use call kardo yeah hota hai iffe 
+
+use to make private varibales 
+code ke safe or private bnnmae ke liye .
+
+var ans =(function(){
+    var privateval =12;
+    return {  
+      getter : function(){
+        console.log(privateval)
+      },
+      setter: fucntion (val){
+          privateval = val;
+      }
+    }
+})()
+
+agar ab isko value print karyenge 
+
+ans me blank object ayega => {}
+geeter matlab private value ko access karna .
+yeah varibale iffi ke andar hi access ho sakta hai .
+
+IIFE STADNS  for immediately invoked fucntiion expression . It is 
+a way to create a fucntion and immediately execute it without needing 
+to call it later . 
+
+IIFE are commonly used to create a private scope for your code, 
+so that variable and fucntions defined inside the IIFE ARE NOT  accesibel
+from outside the IIFE .
+
+33:07
+
+==============================================================================================
+
+                     prototype
+                     -----------
+
+GO TO THE BROWSER CONSOLE AND CREATE AND OBJECT :
+  
+  var obj ={
+    naem: "lalit";
+  }
+
+  & now type object name followeed with a dot opreatro :
+
+  obj.
+
+  so , if we didn't created these properties where do they 
+  come form that's where the concept of prototype comes 
+  in , every created object gets a property called 
+  prototype , which means whenever you create an object it gets prototype 
+  property automatically .
+
+
+but when we check it on  console what does it contains
+
+it contains an extra property called [[prototype]]
+so where does it come from end what does it contains 
+
+                          where it come from
+                          ------------------
+
+javascript by default adds a property called 
+[[prototype ]] to every object , so if you ever see
+any object , you can blindly say that object
+contain prototype , so now , what does it contain ?
+
+hasownproperty -: objecct ke andar jo property hai bo particular ushi ki 
+                      protprty hai ki nahi .
+
+
+answer
+=>>>
+
+    [[prototype]] contains many helper properties and methods which
+    we can use to complete our task, let's say we create an array and 
+    we want to know length of it, what do we do , we use  length
+    property of array , did we created. length on that array , no! but 
+    still contains . length, the 
+
+    Questions is how ?
+
+    The answer is , many properties and methods are already
+    available to use built by javascript creator inside prototype 
+    of every objects .
+
+==================================================================================================================
+
+
+                        PROTOTYPAL INHERITANCE 
+                        ======================
+
+  sHINCHAN KE PAPA =>
+
+              he's a human
+              he got a last name 
+              he got rouund eyebrow .
+
+sHINCHAN =>
+          because shinchan is his papa's son he inherit or we can say
+          contains properties of his papa , example , shinchan is also 
+          human , he also has same last name , and he also gets rouund
+          eyebrows . 
+
+          This is called inheritence 
+
+          But what about prototype inheritence ?
+
+  ->  that's exactly what we're going to talk about now, 
+      inheritence is basically passing parent's features properties to their
+      childrens , to do the same things . In javascript with the help Of
+      prototype ( one extra property always given by js to every object)
+      is inheritence .
+
+      make an object called human and put properties like, canFly , 
+      canTalk, willDie .
+
+      var human ={
+          name : "lalit",
+          canFly : false,
+          canTalk : true,
+          willDie : true
+
+      }
+
+      make another object called sheryians student ,he can do all 
+      things which a human can do but he can do few more things like,
+      he can solve js questions and create modern websites , so we 
+      create extra two props which normal human can't do in that 
+      object and rest properties we will inherit from human .
+
+
+         var SheryiansStudent = {
+          solveJsQuestions : true,
+          createModernWebsite : true
+         }
+
+         SheryiansStudent.__proto__ = human
+
+         //this line is inheritence 
+
+
+   ==========================================================================================
+
+                                    this keyword
+                                    --------------
+
+this keyword is a special keyword in javascript which changes it's 
+value in different context .
+
+LET'S SEE "THIS" KEYWORD IN DIFFERENT CONTEXT : 
+---------------------------------------------
+
+IN GLOBAL SCOPE : 
+^^^^^^^^^^^^^^^^^^^^
+
+           JAB bhi koi cheej {} in bracket ke andar nahi hoti to hume
+  use global scope kehte hai 
+function abcd =12;  // global scope
+
+  fucntion abce(){
+    var a =12;            //local scope
+  }
+
+
+ 
+console.log(this) ;           gives          window
+
+
+In fucntion scope : 
+^^^^^^^^^^^^^^^^^^^^^^
+
+          function abcd(){ 
+            console.log(this);                  gives     window
+          }
+
+
+in method scope :
+^^^^^^^^^^^^^^^^^
+
+function jo object ke anddar ho usshe method kehte hai .
+
+             var obj = {
+                name: "lalit",
+                someMethod : fucntion(){           gives  object obj
+                  console.log(this);
+                }
+             }
+
+Note = >  In any method "this" , keyword always refers to 
+          parent object .
+
+
+event listeners :
+(dom)
+----------------
+
+var button = document.querySelector("button");
+button.addEventListener("Click, fucntion(){
+  console.log(this);
+})
+
+this keyword is equal to whatever written before addEventListener ,in
+this case button
+
+
+==========================================================================================
+ 
+
+                                    call apply bind
+                                    ---------------
+
+agar tumhare paas koi fucntion hai and koi object hai and tumhe 
+fucntion chalana hai aur by default jo this ki value window hai 
+use window naa rakh kar point karwwana hai kissi object ki taraf
+
+fucntion abcd(){
+  console.log(this);
+}
+
+var obj ={age : 24}
+
+abcd.call(obj)               // .call kearne se obj this ban jayega
+                                  window ki jaghah
+
+            
+  fucntion abcd(val1 ,val2 , val3){
+  console.log(this);
+}
+
+var obj ={age : 24}
+
+abcd.call(obj,1,2,3)
+
+                             apply
+                             -----
+
+  abcd.apply(obj,[1,2,3])  //apply humeha 2 arg hi leta hai ek 
+                              this ke liye or ek paramenter ke 
+                               liye islieye hi humene array banker
+                               pass kiya hai .
+
+ use => jab this ki value kuch or hai prr aap chathete ho ki this 
+        ki value kuch or obj ho ho to uss time call , apply , bind use
+        karte hai .
+
+   fucntion abcd(){
+  console.log(this);
+}
+
+var obj ={age : 24}
+
+var bindfnc = abcd.bind(obj)     //bind karke de dega 
+bindfuc();
+
+
+
+=======================================================================================
+
+                            pure fucntions 
+                            --------------
+
+pure fucntions is any fucntions which has theese 2 featues : 
+
+1) It should always return same output for same input .
+2) It will never change/update the value of a global variable .
+
+
+function acd(val ){
+  return Math.random()*val
+}
+
+
+pure fucntion 
+---------
+
+fucntion abcd(a,b){
+   return a*b;
+}
+var ans1 = abcd(1,2);
+var ans2 = abcd(1,2);
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+                                      Asynchronous javascript
+                                      -----------------------
+
+
+ sync => matlab ek ke baad dusra hoga ,jab tak ek commad complete naa ho.,
+         dusra shuru nahi hoga 
+
+aync =>  matlab sarre kaam ek saath shurr kardo , jiska answer pahle aajaye
+ uska jawaab pehele dedena .
+
+task a = 5
+task b = 2
+task c = 15
+task d = 1
+
+
+kaise pata chalta hai ki hum sync code likh rahe ya async 
+ // Agar in me se kisi ka use kar rahe ho to wo hai asynchronous js .
+=> setTimeout
+=> setInterval
+=> promises
+=> fetch
+=> axios
+=> XMLHttpRequest 
+
+console.log("12")  // synchronous code hai 
+
+
+-------------------------------------------------------------------
+  
+Q.  Asynchronous javascript hai kya ? 
+Ans => kai baar aapka final code dependent hota hai kisi aur ke server par,
+        is case mein hume nahi pata hota ki answer uske server se kab laut kar 
+        aayega, to hum kya nahi kar skte is writting sync code, isse nipatne ke
+        liye hum log async code likh dete hai takki blocking naa ho and 
+        jab bhi answer aaye humaree answerr ke respect mein chalnea walla 
+        code chal jayye ..
+
+
+        async code ka main motive hata hai un cases mein jinmein hume nahi 
+        pata code ka answer kitni der mein aayga to jab bhi answer aa jaye 
+        to us ansswer ke respect me koi code chala dena  .
+
+     ex => facebook se photo lao or jab photo a jaye to show kar 
+          dena .
+
+
+
+          setTimeout(callback,timeinms) // syntax
+
+          setTimeout(fucnction(){},5000)
+
+// callback fun humesha async code mein answer anne 
+    par chalta hai .
+
+  
+  =============================================================================
+                    
+                     javascript is not asynchronous
+                     --------------------------------
+
+async  ka matlab hai 2 kam ek saath hona .
+
+jo bhi main stack parr hota hai wo output karta hai ans 
+ jo bhi side stack par hota hai wo behind the scene 
+ processing kar sakta hai aur jab uski processing 
+ complete ho use main stack mein lakar chalaya ja 
+ sakta hai  . 
+
+ main stack => execution 
+
+ jab main stack kahli ho jata hai fir side stack 
+ ko check kiya jata hai or usko main stack me laya jata 
+ hai .
+
+ event loop hi main stack or side stack ke beech 
+ me communication karta hai . ( event loop side se
+ chheze main stack me lekar atta hai ).
+
+ js single thread hai ek baar me ek hi computation
+ kar sakta hai .
+
+
+ =================================================================
+
+
+                              callback
+                              ---------
+
+
+=> jab bhi tum
+  fetch  , axios (package api used to communcicate third party )
+  promises 
+  setTimeout
+  setInterval   // yeah seb request ko bejetehai  .
+  // jab complete ho jaye  to uska answer yha milta hai |
+                                                        down
+    then catch
+    callback
+    async await.
+
+=> callback humesha ek fucntion hota hai yeah sirf tab chalta hai 
+   jab async code ka completion ho jata hai . 
+
+   fetch('https://www.google.com')
+
+
+
+
+===========================================================================================
+
+
+                                     promises
+                                     -----------
+
+
+
+new Promise(res,rej)=>{
+  if(true){
+    
+  }
+}
+

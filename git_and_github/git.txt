@@ -1,0 +1,150 @@
+         Git                                       GitHub
+
+1) Git was first introduced           1) GitHub was first introduced in 
+     in April 2005.                      October 2007. The site was later
+                                         developed in April 2008.
+ 
+ 2)  Git is maintained by Linux       2) GitHub maintained by Microsoft.
+
+ 3) Git is a Command-Line tool.       3) GitHub is a Graphical User 
+                                         Interface.
+
+4) Is installed locally in the        4) Can be accessed on the
+   system for use and does not           web. It needs an internet 
+   require the internet.                 connection.
+
+5) Majorly focused on version          5)Is majorly focused on web hosting 
+   control and code conserving.          and code sharing.
+
+6) Lacks user management features      6) GitHub has built-in user management 
+                                          features. also provides Organisational
+                                         and Enterprise level accounts with 
+                                         unlimited public repositories and
+                                         collaborators.
+
+7) Provides no external tool           7) GitHub provides multiple external 
+    configuration.                        tools including third-party 
+                                          tools.
+   
+8) Git is an open-source that          8) GitHub is inclusive of free-tier and
+  allows users to modify                  paid-tier versions. However, 
+  and share the software.                 t is not open source.
+
+9) The privacy in Git is too           9) Privacy depends on the settings 
+    strong                                of the repositories.
+  
+10) It is compatible with              10) It is compatible with Windows,
+    Windows, macOS, Linux,                  macOS, Linux, and all other 
+   Solarix, AIX                              web browsers.           
+                                           
+11) Although GIT is one of              11) Major competitors include GitLab,
+   the best version controllers,            BITBUCKET, etc.
+  it fights with Mercurial, 
+    IBM, etc.
+  
+12) There’s no dedicated system         12) GitHub provides a specific
+   to communicate with                      tab to communicate and resolve
+   collaborators.                            issues with collaborators.
+
+
+
+   ======================================================================================================
+
+ Git => main code base ka management tool .(software)
+ github => same git waali functionalities bass ye website ke roop me milegi .(website)
+ 
+
+git download 
+github prr account 
+ 
+new repositories
+history
+branches
+fork 
+github issues section
+command line interface github pages 
+
+
+=============================================================================================
+
+                 new repositories => new folder
+                 commit           => save
+                 fork             => complete copy
+                 github issues    => complaints 
+
+======================================================================================================
+
+
+                               branching
+                               ---------
+
+
+            
+        /   
+    code 
+(master)\
+
+
+                                                                                  /  master with yellow
+     Master -> red colour add  +> master with red  => now created two branch of it
+                                                                                  \  master with green 
+     possibilities ko brach kehte hai .
+
+     ek brach bna li usme sarri cheez a gyi .
+
+     probability1 ke sarre changes merge kiya ja sakte hai master ke saath 
+
+
+
+   pull request 
+   ============
+      
+            /   edit a file
+   owner =>
+
+
+push => bejne ko push
+pull => lene ko pull( changes in code )
+
+
+
+===================================================================================================================
+
+
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.

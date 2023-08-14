@@ -1,0 +1,24 @@
+
+
+
+
+            #   html
+            ============
+
+1) make html file
+2) make boilerplate code   => amount of code that is very imp
+3) understand tag  =>  less than and greater ttan ke becch me kuch likhoge to
+                      vo tag ho jayega 
+                      ek opening and ek closing tag 
+4) understand h1-h6 => different headings
+5) understand p    => paragraph tag
+6) understand br   => break the line
+7) understand img   => adding images to our file
+                     from  unsplash .com
+                    pixels.com
+8) understand a  
+9) understand div
+10) understand id
+11) understand class
+12) Auto save opening
+13) Live server

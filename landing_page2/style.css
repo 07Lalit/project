@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+   
+    height: 100%;
+    width: 100%;
+    background-color: rgb(225, 225, 239);
+  
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#left_div{
+
+    height: 100%;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+#right_div{
+
+    height: 100%;
+    width: 60%;
+    background-color: yellow;
+    
+}
+
+
+#rd1{
+    width: 100%;
+    height: 50%;
+    background-color: chartreuse;
+    display: flex;
+    
+
+}
+#first{
+    width: 60%;
+    height: 100%;
+    background-color: blue;
+    background-image: url(https://images.unsplash.com/photo-1607245795313-b5e84006a85d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    position: relative;
+
+}
+
+#second{
+    width: 50%;
+    height: 100%;
+    background-color:pink;
+    background-image: url(https://images.pexels.com/photos/15193687/pexels-photo-15193687/free-photo-of-man-reading-newspaper-near-lake-and-mountains.jpeg);
+    padding: 10%;
+    flex: content;
+    float: left;
+}
+#rd2{
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    background-image: url(https://images.pexels.com/photos/11909168/pexels-photo-11909168.jpeg);
+    position: relative;
+    flex-shrink: 50%;
+}
+
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+    background-image: url(https://images.pexels.com/photos/17283477/pexels-photo-17283477/free-photo-of-cathedral-tower-behind-buildings-in-city.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+}
+
+#text{
+    height: 300px;
+    position: absolute;
+    width: 1px;
+    font-size:25px;
+    font-style: italic;
+    left: 10%;
+    top:47%;
+    color: #fff1f1;
+    background-color: rgb(8, 8, 7);
+    
+    
+    background-size: cover;
+    background-position: center;
+     font-size: 30px;
+    font-weight: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: px;
+    
+    
+
+   
+
+    
+}
+
+
+/*
+dribble.com se website dekhan hai .
+unsplash.com se photo
+
+*/

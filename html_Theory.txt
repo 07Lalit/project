@@ -1,0 +1,337 @@
+                            # HTML5 
+
+1)  Html was published in october 2014 by the World Wide Web 
+    Consortium (W3C)
+2)  It is the latest and most echnaced version of Html
+
+3) Supersedes html 4.01, xhtml 1.0 and xhtml 1.1
+
+4) Is a standard for structuring and prsenting content on the world 
+   wide Web
+
+5) ensures backward compatibility
+
+
+ *******************************************************************************
+
+
+                               NEW FEATURES
+                               =============
+                            
+
+1) new sematics (tags) 
+2) canvas - which will heip you to render shapes and images at runtime.
+3) Geolocation 
+4) Microdata
+5) Web storage
+6) Web Messaging
+7) IndexedDB
+8) Multimedia
+
+**********************************************************************************
+
+
+                             Baisc syntax
+                             =============
+
+<html> 
+    <head>
+        <title> My sample page </title>
+    </head>
+    <body>
+
+        <h1> heading h1 <heading>
+
+    </body>
+</html>
+
+save this document with any name with .html extension 
+demo.html
+
+
+***********************************************************************************
+
+
+                                 New sematics (tags)
+                                 ======================
+
+1) main 
+2) section
+3) article
+4) header
+5) footer 
+6) aside
+7) nav
+8) figure
+9) cite 
+10) menu
+
+
+lets see all of them by implementing in html file .
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>demo1</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <header role="banner">
+        <h1> HTML5 document structure example</h1>
+        <p>this page should be tried in safari , chrome or Morzilla</p>
+    
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://www.tutorialspoint.com/html"> HTML TUTORIAL</a></li>
+            <li><a href="https://www.tutorialspoint.com/java"> JAVA TUTORIAL</a></li>
+        </ul>
+
+
+    </nav>
+
+
+    <article>
+        <section>hyy my name is Lalit</section>
+        <section> I am learning html5 </section>
+        <section> Thank you ..</section>
+
+    </article>
+
+    <aside>
+        <p> This is aside part of the web page </p>
+    </aside>
+
+    <figure align ="right">
+        <img src="lalit ph.jpg" alt="my photo" width="200" height="100">
+    </figure>
+
+    <footer>
+        <p> created by - lalit gour</p>
+        <ul>
+            <li><a href="www.google.com">contact us</a></li>
+            <li><a href="www.google.com">about us </a></li>
+            <li><a href="www.google.com">home</a></li>
+        </ul>
+    </footer>
+
+
+
+  </body>
+</html>
+
+
+
+
+********************************************************************************************************
+
+
+                          web form 2.0
+                          ============
+
+
+1) Applies to html and xhtml
+2) provides strongly type input fields
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td> Date and time : </td>
+                    <td> <input type="text" name="newinput1" id="1"></td>
+                </tr>
+                <tr>
+                    <td>Date : </td>
+                    <td> <input type="date" name="newinput2"></td>
+                </tr>
+                <tr>
+                    <td> week : </td>
+                    <td> <input type="month" name="newinput3" id="1"></td>
+                </tr>
+                <tr>
+                    <td>week : </td>
+                    <td> <input type="week" name="newinput4"></td>
+                </tr>
+                <tr>
+                    <td> time : </td>
+                    <td> <input type="time" name="newinput1" id="1"></td>
+                </tr>
+                <tr>
+                    <td> number : </td>
+                    <td> <input type="number" name="newinput2"></td>
+                </tr>
+                <tr>
+                    <td> range : </td>
+                    <td> <input type="range" name="newinput1" id="1"></td>
+                </tr>
+                <tr>
+                    <td>email : </td>
+                    <td> <input type="email" name="newinput2"></td>
+                </tr>
+                <tr>
+                    <td> image : </td>
+                    <td> <input type="image" name="newinput1" id="1"></td>
+                </tr>
+                <tr>
+                    <td>password : </td>
+                    <td> <input type="password" name="newinput2"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                </tr>
+    
+
+
+
+
+            </table>
+        </form>
+
+    
+    </body>
+</html>
+
+
+
+
+**********************************************************************************************************************
+
+
+                     # SVG
+
+1) SVG stands for scalable vector Graphics
+
+2) Is an extension to design 2D Graphics
+
+3) Mostly used in diagrams like pie charts and 
+    2D Graphs 
+
+
+
+***************************************************************************************************
+
+
+                        #MathMl
+                
+1) Stands for Mathematical Markup Language
+2) Used for description mathermatical notations.
+3) Captures the structure and the content
+4) Helps in integrating mathermatical formulae with www.
+
+***********************************************************************************
+
+
+                        # web storage
+
+1) Also known as DOM storage
+2) Supports persistent data storage in web browser
+   in mb
+   chrome 10 mb
+3) storage size may vary from brwoser to browser
+ 
+
+ storage can be classified into two types =:
+
+ 1) Local storage
+ 2) session storage
+
+********************************************************************************* 
+ 
+                        # Web Sql
+                        ==========
+
+1) Is a web page API for storage data in databases that can be queried 
+   using a variant of sql 
+
+2) The API is supported by google chrome , opera , safari , and the
+    Android browser .
+
+***************************************************************************************
+                         # Server sent Events
+                         ====================
+
+
+
+*****************************************************************
+ 
+                       # canvas
+
+1) Allows for dynamic , scriptable rendering of 2d shapes and
+   bitmap images .
+2) A simple <canvas> element which has only two specific attributes 
+   width and height plus all the core html5 attributes like id ,
+   name and class etc .
+
+*********************************************************************************
+                        
+                        #Geolocation
+                        ================
+
+1) Interface to retrieve the geographical location information for 
+   a lient-side device
+2) Javascript can caputre your latitude and longitude and can be send 
+   to backend web server and do fancy location - aware things like 
+   findign local businessman or showing your location on a map .
+
+
+ **************************************************************************
+
+                        Media Elements
+                        ==============
+
+-> This implementation helps us in putting media elements like audio and 
+   video on the browser .
+
+
+********************************************************************************
+
+                       Micro data
+                       ============
+
+
+1) Is a Whatwg html specification used to nest metadata within exitsting
+   content on web pages.
+
+2) Search engines , web crawlers , and browser can extract and process 
+   Microdata.
+
+3) Extacted info is used to provide a richer browsing experinece for user.
+
+
+*******************************************************
+
+                      Drag and Drop 
+
+
+-> It can be achieve using html5 darg n drop api .
+
+
+****************************************************************************
+
+                   web workers
+                   =============
+
+-> basically what it does is 
+
+*******************************************************
+  
+                        IndexedDB
+
+1) Earlier Known as web simple DB , also known as Indexed Database API .
+2) can store large amount of data in JSON format .
+3) Stores a key value pair in a non relational database .
+
+
+******************************************************************************

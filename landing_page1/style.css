@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+ 
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(59, 93, 122);
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+   
+    display: flex;
+
+}
+
+
+#part1{
+    height:100%;
+    width: 26%;
+   
+}
+
+
+#part2{
+
+    background-image: url(https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/12%20Websites%20with%20Stunning%20Background%20Images%20%5B+%20Best%20Design%20Practices%5D-Feb-09-2022-09-47-42-79-PM.jpeg?width=975&name=12%20Websites%20with%20Stunning%20Background%20Images%20%5B+%20Best%20Design%20Practices%5D-Feb-09-2022-09-47-42-79-PM.jpeg);
+   /* background-image: url(https://images.unsplash.com/photo-1599556906120-b02499de8b84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80);
+    background-image: url(https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80); */
+    background-size:auto;
+    background-position: center;
+   
+    display: centre;
+    float: centre;
+    image-resolution: 800px;
+    justify-content: flex-end;
+    
+}
+
+
+
+
+#part3{
+    height:100%;
+    width: 7%;
+   
+}
+
+
+#text-div{
+    height: 300px;
+    position: absolute;
+    width: 4px;
+    background-color: rgb(226, 13, 13) ;
+    left: 10%;
+    top:3%;
+    color: rgb(238, 242, 246);
+    
+   
+    background-size: cover;
+    background-position: center;
+    
+
+   
+
+    
+}
+
+#small{
+
+    height: 400px;
+    width: 300px;
+    position: absolute;
+   
+    background-image: url(https://images.unsplash.com/photo-1496346181985-c973038ae99d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+ /*   background-image: url(https://images.unsplash.com/photo-1614204424926-196a80bf0be8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+    background-image: url(https://images.unsplash.com/photo-1618721470657-cdd3544f60d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80);
+   
+  
+    background-image: url(https://images.unsplash.com/photo-1618721470657-cdd3544f60d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80);
+   */ background-size: cover;
+    background-position: center;
+    top:50% ;
+    right:5%;
+    transform: translate(0,-50%);
+}
+   /* 
+#vertical_text{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    width:40%;
+    top: right;
+    left:10%;
+}
+
+#vertical_text h1{
+    font-size: 100px;
+    font-weight: 20px;
+    font-family: Lucida Sans;
+    letter-spacing: 10px;
+    -webkit-text-stroke-width: 2px ;
+     -webkit-text-stroke-color: rgb(186, 170, 170);
+     
+    
+   
+}
